@@ -1,5 +1,5 @@
 ---
-uid:c
+uid: c
 ---
 
 # dupe c

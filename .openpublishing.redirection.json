@@ -1,0 +1,9 @@
+{
+    "redirections": [
+	    {
+		    "source_path": "testBookmark/test-redirect-external-bookmark.md",
+			"redirect_url": "testRedirect/test-redirect",
+			"redirect_document_id": false
+		}
+	]
+}

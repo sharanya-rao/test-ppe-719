@@ -1,0 +1,328 @@
+### YamlMime:PowerConnector
+# This file is auto-generated. Any manual changes will be overwritten.
+actions:
+- parameters:
+  - required: true
+    name: Callback Id
+    type: string
+    summary: CallbackId as received in the bttn trigger.
+    key: callbackId
+  - required: true
+    name: Flow Result
+    type: string
+    summary: Positive for success, Negative for failure, Wait to extend timeout period
+    key: result
+  name: Return Flow result
+  summary: Reflect Flow result via bttn device lights.
+  operationId: ReturnFlowResult
+- parameters:
+  - required: true
+    name: Bttn ID
+    type: string
+    summary: Bttn short ID or device ID.
+    key: id
+  name: Get bttn counter value
+  summary: Gets the bttn counter value.
+  operationId: GetBttnCounter
+  response:
+    singleSchema:
+      name: Body
+      type: BttnApiCounter
+- parameters:
+  - required: true
+    name: Bttn ID
+    type: string
+    summary: Bttn short ID or device ID.
+    key: id
+  name: Get bttn info
+  summary: Gets the bttn device identification information.
+  operationId: GetBttnInfo
+  response:
+    singleSchema:
+      name: Body
+      type: BttnApiInfo
+- name: Get list of bttns
+  summary: Gets list of bttns associated with the account.
+  operationId: ListBttns
+  response:
+    singleSchema:
+      name: Items
+      type: BttnApiList
+triggers:
+- parameters:
+  - required: true
+    name: bttn ID
+    type: string
+    summary: bttn short ID or device ID.
+    key: id
+  name: When a bttn is pressed
+  summary: Trigger a flow with a press of a bttn.
+  operationId: RegisterWebhook
+  response:
+    singleSchema:
+      name: Body
+      type: BttnApiWebhookTriggerBody
+definitions:
+- properties:
+  - name: Callback Id
+    type: BttnCallbackId
+    summary: Use this for callback Id in the Bttn Report Result action
+    path: callback-id
+  - name: Press type
+    type: BttnPressType
+    summary: Short press | Long press| Not pressed in the defined time window
+    path: press-type
+  - name: Counter
+    type: BttnCounter
+    summary: Total count of bttn presses (short/long/not pressed)
+    path: counter
+  - name: Counter (short)
+    type: BttnCounterShort
+    summary: Total count of short presses of the bttn
+    path: counter-short
+  - name: Counter (long press trigger)
+    type: BttnCounterLong
+    summary: Total count of long presses of the bttn
+    path: counter-long
+  - name: Counter (not pressed)
+    type: BttnCounterNot
+    summary: Total count of not pressed triggers issued for the bttn
+    path: counter-not-pressed
+  - name: Short ID
+    type: BttnShortId
+    summary: Short ID of the bttn (bid)
+    path: short-id
+  - name: Device ID
+    type: BttnDeviceId
+    summary: Device ID of the bttn
+    path: device-id
+  - name: Name
+    type: BttnName
+    summary: The name of the bttn as set on the my.bt.tn portal
+    path: name
+  - name: Email address
+    type: BttnEmail
+    summary: E-mail address associated with the bttn on the my.bt.tn portal
+    path: email
+  - name: Location
+    type: BttnLocation
+    summary: Location of the button as set on the my.bt.tn portal
+    path: location
+  - name: Reference URL
+    type: BttnUrl
+    summary: Reference URL of the bt.tn
+    path: url
+  - name: Language
+    type: BttnLanguage
+    summary: Language as set for the bttn on the my.bt.tn portal
+    path: language
+  - name: User name
+    type: BttnUserName
+    summary: User name associated with the button on the my.bt.tn portal
+    path: user-name
+  name: BttnApiWebhookTriggerBody
+- properties:
+  - name: Items
+    type: BttnListData
+    path: ''
+  name: BttnApiList
+- properties:
+  - name: Short ID
+    type: BttnShortId
+    summary: Short ID of the bttn (bid)
+    path: bid
+  - name: Name
+    type: BttnNameId
+    summary: The name of the bttn as set on the my.bt.tn portal
+    path: name_id
+  name: BttnListData
+- name: BttnNameId
+  summary: The name of the bttn as set on the my.bt.tn portal
+  singleSchema:
+    name: Name
+    type: string
+    summary: The name of the bttn as set on the my.bt.tn portal
+- name: BttnShortId
+  summary: Short ID of the bttn (bid)
+  singleSchema:
+    name: Short ID
+    type: integer
+    summary: Short ID of the bttn (bid)
+- name: BttnDeviceId
+  summary: Device ID of the bttn
+  singleSchema:
+    name: Device ID
+    type: string
+    summary: Device ID of the bttn
+- name: BttnName
+  summary: The name of the bttn as set on the my.bt.tn portal
+  singleSchema:
+    name: Name
+    type: string
+    summary: The name of the bttn as set on the my.bt.tn portal
+- name: BttnEmail
+  summary: E-mail address associated with the bttn on the my.bt.tn portal
+  singleSchema:
+    name: Email address
+    type: string
+    summary: E-mail address associated with the bttn on the my.bt.tn portal
+- name: BttnLocation
+  summary: Location of the button as set on the my.bt.tn portal
+  singleSchema:
+    name: Location
+    type: string
+    summary: Location of the button as set on the my.bt.tn portal
+- name: BttnUrl
+  summary: Reference URL of the bt.tn
+  singleSchema:
+    name: Reference URL
+    type: string
+    summary: Reference URL of the bt.tn
+- name: BttnLanguage
+  summary: Language as set for the bttn on the my.bt.tn portal
+  singleSchema:
+    name: Language
+    type: string
+    summary: Language as set for the bttn on the my.bt.tn portal
+- name: BttnUserName
+  summary: User name associated with the button on the my.bt.tn portal
+  singleSchema:
+    name: User name
+    type: string
+    summary: User name associated with the button on the my.bt.tn portal
+- name: BttnCounter
+  summary: Total count of bttn presses (short/long/not pressed)
+  singleSchema:
+    name: Counter
+    type: integer
+    summary: Total count of bttn presses (short/long/not pressed)
+- name: BttnCounterShort
+  summary: Total count of short presses of the bttn
+  singleSchema:
+    name: Counter (short)
+    type: integer
+    summary: Total count of short presses of the bttn
+- name: BttnCounterLong
+  summary: Total count of long presses of the bttn
+  singleSchema:
+    name: Counter (long press trigger)
+    type: integer
+    summary: Total count of long presses of the bttn
+- name: BttnCounterNot
+  summary: Total count of not pressed triggers issued for the bttn
+  singleSchema:
+    name: Counter (not pressed)
+    type: integer
+    summary: Total count of not pressed triggers issued for the bttn
+- name: BttnPressType
+  summary: Short press | Long press| Not pressed in the defined time window
+  singleSchema:
+    name: Press type
+    type: string
+    summary: Short press | Long press| Not pressed in the defined time window
+- name: BttnTimezone
+  summary: bttn timezone as specified on the my.bt.tn portal
+  singleSchema:
+    name: Timezone
+    type: string
+    summary: bttn timezone as specified on the my.bt.tn portal
+- name: BttnCallbackId
+  summary: Use this for callback Id in the Bttn Report Result action
+  singleSchema:
+    name: Callback Id
+    type: string
+    summary: Use this for callback Id in the Bttn Report Result action
+- properties:
+  - name: Counter
+    type: BttnCounter
+    summary: Total count of bttn presses (short/long/not pressed)
+    path: counter
+  - name: Short ID
+    type: BttnShortId
+    summary: Short ID of the bttn (bid)
+    path: bid
+  - name: Device ID
+    type: BttnDeviceId
+    summary: Device ID of the bttn
+    path: address
+  - name: Name
+    type: BttnName
+    summary: The name of the bttn as set on the my.bt.tn portal
+    path: name
+  - name: Email address
+    type: BttnEmail
+    summary: E-mail address associated with the bttn on the my.bt.tn portal
+    path: emailaddress
+  - name: Location
+    type: BttnLocation
+    summary: Location of the button as set on the my.bt.tn portal
+    path: location
+  - name: Reference URL
+    type: BttnUrl
+    summary: Reference URL of the bt.tn
+    path: url
+  - name: Language
+    type: BttnLanguage
+    summary: Language as set for the bttn on the my.bt.tn portal
+    path: language
+  - name: Timezone
+    type: BttnTimezone
+    summary: bttn timezone as specified on the my.bt.tn portal
+    path: timezone
+  - name: User name
+    type: BttnUserName
+    summary: User name associated with the button on the my.bt.tn portal
+    path: user
+  name: BttnApiCounter
+- properties:
+  - name: Short ID
+    type: BttnShortId
+    summary: Short ID of the bttn (bid)
+    path: bid
+  - name: Device ID
+    type: BttnDeviceId
+    summary: Device ID of the bttn
+    path: address
+  - name: Name
+    type: BttnName
+    summary: The name of the bttn as set on the my.bt.tn portal
+    path: name
+  - name: Email address
+    type: BttnEmail
+    summary: E-mail address associated with the bttn on the my.bt.tn portal
+    path: emailaddress
+  - name: Location
+    type: BttnLocation
+    summary: Location of the button as set on the my.bt.tn portal
+    path: location
+  - name: Reference URL
+    type: BttnUrl
+    summary: Reference URL of the bt.tn
+    path: url
+  - name: Language
+    type: BttnLanguage
+    summary: Language as set for the bttn on the my.bt.tn portal
+    path: language
+  - name: Timezone
+    type: BttnTimezone
+    summary: bttn timezone as specified on the my.bt.tn portal
+    path: timezone
+  - name: User name
+    type: BttnUserName
+    summary: User name associated with the button on the my.bt.tn portal
+    path: user
+  name: BttnApiInfo
+title: bttn (Preview)
+summary: bttn - The simplest internet user interface in the world.
+remarks: "This connector is available in the following products and regions: \r\n\r\nService | Class | Regions \r\n --- | --- | --- \r\n __Logic Apps__ |Standard|All [Logic Apps regions](https://azure.microsoft.com/global-infrastructure/services/?products=logic-apps&regions=all) except the following: <br> &nbsp;&nbsp;&nbsp;&nbsp; - &nbsp; Azure Government regions <br> &nbsp;&nbsp;&nbsp;&nbsp; - &nbsp; Azure China regions \r\n __Flow__ |Standard|All [Flow regions](https://docs.microsoft.com/flow/regions-overview) except the following: <br> &nbsp;&nbsp;&nbsp;&nbsp; - &nbsp; US Government (GCC) \r\n __PowerApps__ |Standard|All [PowerApps regions](https://docs.microsoft.com/powerapps/administrator/regions-overview#what-regions-are-available) except the following: <br> &nbsp;&nbsp;&nbsp;&nbsp; - &nbsp; US Government (GCC) \r\n"
+iconUrl: https://connectoricons-prod.azureedge.net/bttn/icon_1.0.1149.1456.png
+limits:
+- name: API calls per connection
+  count: 100
+  renewalPeriod: 60 seconds
+moreInformation:
+- url: https://ms.flow.microsoft.com/en-us/blog/physical-buttons/
+  text: Trigger Flows from physical buttons
+metadata:
+  title: bttn
+  description: bttn - The simplest internet user interface in the world.

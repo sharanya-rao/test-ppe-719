@@ -275,12 +275,6 @@ definitions:
     path: user
   name: BttnApiCounter
 - properties:
-  name: string
-  summary: simple type string
-- properties:
-  name: integer
-  summary: simple type integer
-- properties:
   - name: Short ID
     type: BttnShortId
     summary: Short ID of the bttn (bid)

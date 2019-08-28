@@ -1,7 +1,8 @@
 ---
 topic_type:
-	- APIRef  
-	- kbSyntax  
+- APIRef  
+- kbSyntax
+ms.author:	v-pegao
 
 ---
 

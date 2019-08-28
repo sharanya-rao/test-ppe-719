@@ -1,6 +1,6 @@
 ---
 topic_type:
-  - APIRef  
+	- APIRef  
 	- kbSyntax  
 
 ---

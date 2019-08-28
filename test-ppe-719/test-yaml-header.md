@@ -1,7 +1,7 @@
 ---
 topic_type:
--APIRef
--kbSyntax
+- APIRef
+- kbSyntax
 ---
 
 # test yaml header format

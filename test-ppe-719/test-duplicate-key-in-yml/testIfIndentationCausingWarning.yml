@@ -1,10 +1,5 @@
 ### YamlMime:Tutorial
 title: Building a serverless web app
-metadata:
-  title: Building a serverless web app
-  description: In this walkthrough tutorial, you will deploy a simple web application that enables users to upload their images and automatically get captions describing them.
-  audience: Developer
-  level: Beginner
 items:
 - durationInMinutes: 5
   content: |

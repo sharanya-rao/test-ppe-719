@@ -16,7 +16,7 @@ items:
   durationInMinutes: 10
   content: |
     [!include[](../index.md)]
-    - title: step 3.1 with indetation issue
+- title: step 3.1 with indetation issue
   durationInMinutes: 10
   content: |
     [!include[](../index.md)]

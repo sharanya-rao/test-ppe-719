@@ -1,0 +1,29 @@
+### YamlMime:Tutorial
+title: Building a serverless web app
+metadata:
+  title: Building a serverless web app
+  description: In this walkthrough tutorial, you will deploy a simple web application that enables users to upload their images and automatically get captions describing them.
+  audience: Developer
+  level: Beginner
+items:
+- durationInMinutes: 5
+  content: |
+    [!include[](../index.md)]
+- title: Step 1: after overview
+  durationInMinutes: 10
+  content: |
+    [!include[](../index.md)]
+- title: Step 2: after overview
+  durationInMinutes: 10
+  content: |
+    [!include[](../index.md)]
+- title: Step 3: test indentation
+  durationInMinutes: 10
+  content: |
+    [!include[](../index.md)]
+    - title: step 3.1: with indetation issue
+  durationInMinutes: 10
+  content: |
+    [!include[](../index.md)]
+- content: |
+    Congratulations on building a serverless web app on Azure using: Azure Storage, Functions, Cosmos DB, and Cognitive Services

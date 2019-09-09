@@ -65,17 +65,27 @@ sections:
     - title: Command-Line
       html: <p><a href="placeholder">Azure CLI 2.0</a></p>
     - title: Languages
-      html: <p><a href="https://docs.microsoft.com/en-us/azure/">.NET</a></p>
-      html: <p><a href="https://msdn.microsoft.com/library/azure/bb510741.aspx">C and C++</a></p>
-      html: <p><a href="https://docs.microsoft.com/en-us/azure/">Java</a></p>
-      html: <p><a href="https://docs.microsoft.com/en-us/azure/">Node.js</a></p>
-      html: <p><a href="https://docs.microsoft.com/en-us/azure/">Python</a></p>
-      html: <p><a href="https://docs.microsoft.com/en-us/azure/">Ruby</a></p>
-      html: <p><a href="https://docs.microsoft.com/en-us/azure/">PHP</a></p>
+      items:
+      - type: list
+        style: unordered
+        className: spaced noBullet
+        items:
+        - html: <p><a href="https://docs.microsoft.com/en-us/azure/">.NET</a></p>
+        - html: <p><a href="https://msdn.microsoft.com/library/azure/bb510741.aspx">C and C++</a></p>
+        - html: <p><a href="https://docs.microsoft.com/en-us/azure/">Java</a></p>
+        - html: <p><a href="https://docs.microsoft.com/en-us/azure/">Node.js</a></p>
+        - html: <p><a href="https://docs.microsoft.com/en-us/azure/">Python</a></p>
+        - html: <p><a href="https://docs.microsoft.com/en-us/azure/">Ruby</a></p>
+        - html: <p><a href="https://docs.microsoft.com/en-us/azure/">PHP</a></p>
     - title: Resources
-      html: <p><a href="https://azure.microsoft.com/pricing/details/postgres/">Pricing</a></p>
-      html: <p><a href="https://social.msdn.microsoft.com/forums/azure/en-US/home?forum=">MSDN forum</a></p>
-      html: <p><a href="http://stackoverflow.com/questions/tagged/">Stack Overflow</a></p>
-      html: <p><a href="https://docs.microsoft.com/en-us/azure/">Region Availability</a></p>
-      html: <p><a href="https://azure.microsoft.com/documentation/videos/index/">Videos</a></p>
-      html: <p><a href="https://docs.microsoft.com/en-us/azure/">Azure Resource Manager Templates</a></p>
+      items:
+      - type: list
+        style: unordered
+        className: spaced noBullet
+        items:
+        - html: <p><a href="https://azure.microsoft.com/pricing/details/postgres/">Pricing</a></p>
+        - html: <p><a href="https://social.msdn.microsoft.com/forums/azure/en-US/home?forum=">MSDN forum</a></p>
+        - html: <p><a href="http://stackoverflow.com/questions/tagged/">Stack Overflow</a></p>
+        - html: <p><a href="https://docs.microsoft.com/en-us/azure/">Region Availability</a></p>
+        - html: <p><a href="https://azure.microsoft.com/documentation/videos/index/">Videos</a></p>
+        - html: <p><a href="https://docs.microsoft.com/en-us/azure/">Azure Resource Manager Templates</a></p>

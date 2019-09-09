@@ -68,7 +68,6 @@ sections:
       items:
       - type: list
         style: unordered
-        className: spaced noBullet
         items:
         - html: <p><a href="https://docs.microsoft.com/en-us/azure/">.NET</a></p>
         - html: <p><a href="https://msdn.microsoft.com/library/azure/bb510741.aspx">C and C++</a></p>
@@ -81,7 +80,6 @@ sections:
       items:
       - type: list
         style: unordered
-        className: spaced noBullet
         items:
         - html: <p><a href="https://azure.microsoft.com/pricing/details/postgres/">Pricing</a></p>
         - html: <p><a href="https://social.msdn.microsoft.com/forums/azure/en-US/home?forum=">MSDN forum</a></p>

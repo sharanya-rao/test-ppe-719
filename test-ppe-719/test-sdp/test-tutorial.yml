@@ -167,4 +167,4 @@ items:
 - content: |
     You've completed the "Hello C#" tutorial.
     You can learn more about working with the `string` type in the
-    [C# Programming Guide](../programming-guide/index.md) topic on [strings](../programming-guide/strings/index.md).
+    [C# Programming Guide](../index.md).

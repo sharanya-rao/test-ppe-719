@@ -1,6 +1,6 @@
 ###YamlMime:ContextObject
 uhfHeaderID: MSDocsHeader-maxtraining
 SearchScope:
-- .NET
+  - .NET
 breadcrumb_path: ./breadcrumb/toc.json
 toc_rel: ./toc1.yml

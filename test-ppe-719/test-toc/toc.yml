@@ -2,6 +2,6 @@
   expanded: false
   items:
   - name: Pin mappings
-      items:
-      - name: Raspberry Pi 2 and 3
-        href: ~index.md
+    items:
+    - name: Raspberry Pi 2 and 3
+      href: ~index.md

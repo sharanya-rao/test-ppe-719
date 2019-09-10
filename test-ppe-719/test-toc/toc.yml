@@ -1,5 +1,5 @@
 - name: Windows for IoT documentation
-  href: index.yml
+  href: ../index.md
 - name: Windows for IoT
   expanded: false
   items:

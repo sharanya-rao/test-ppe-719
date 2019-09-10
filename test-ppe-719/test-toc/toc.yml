@@ -215,7 +215,7 @@
     - name: Build 16257
       href: release-notes/insider/16257.md
   - name: Commercial releases
-      items:
+    items:
     - name: Current&#58; October 2018 Update (with January 2019 servicing)
       href: release-notes/commercial/17763.md
     - name: October 2018 Update (Build 17763)

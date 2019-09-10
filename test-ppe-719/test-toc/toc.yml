@@ -190,7 +190,7 @@
   items:
   - name: Insider previews
     items:
-    - name: Current: Build 17744
+    - name: Current\: Build 17744
       href: release-notes/insider/17744.md
     - name: Build 17723
       href: release-notes/insider/17723.md
